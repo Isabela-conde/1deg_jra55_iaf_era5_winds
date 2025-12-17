@@ -1,0 +1,54 @@
+laboratory path:  /scratch/e14/ic0706/access-om2
+binary path:  /scratch/e14/ic0706/access-om2/bin
+input path:  /scratch/e14/ic0706/access-om2/input
+work path:  /scratch/e14/ic0706/access-om2/work
+archive path:  /scratch/e14/ic0706/access-om2/archive
+Found experiment archive: /scratch/e14/ic0706/access-om2/archive/1deg_jra55_iaf_era5_winds-cosima_clone_jra55_with_era5_winds-2d2046c9
+nruns: 1 nruns_per_submit: 1 subrun: 1
+payu: Found modules in /opt/Modules/v4.3.0
+Loading input manifest: manifests/input.yaml
+Loading restart manifest: manifests/restart.yaml
+Loading exe manifest: manifests/exe.yaml
+Setting up atmosphere
+Setting up ocean
+Setting up ice
+Setting up access-om2
+Checking exe, input and restart manifests
+Writing manifests/restart.yaml
+payu: warning: mpirun config option is deprecated.  Use mpi: flags option instead
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/config.yaml
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/atmosphere/atm.nml
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/atmosphere/forcing.json
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/ocean/data_table
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/ocean/diag_table
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/ocean/field_table
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/ocean/input.nml
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/ice/cice_in.nml
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/ice/input_ice.nml
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/ice/input_ice_gfdl.nml
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/ice/input_ice_monin.nml
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/ice/input_ice.nml
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/accessom2.nml
+git add /home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/namcouple
+git add manifests/input.yaml
+git add manifests/restart.yaml
+git add manifests/exe.yaml
+git commit -am "2025-12-17 15:20:59: Run 0"
+mpirun --mca io ompio --mca io_ompio_num_aggregators 1 -wdir /scratch/e14/ic0706/access-om2/work/1deg_jra55_iaf_era5_winds-cosima_clone_jra55_with_era5_winds-2d2046c9/atmosphere -np 1  /scratch/e14/ic0706/access-om2/work/1deg_jra55_iaf_era5_winds-cosima_clone_jra55_with_era5_winds-2d2046c9/atmosphere/yatm_70e2c46.exe : -wdir /scratch/e14/ic0706/access-om2/work/1deg_jra55_iaf_era5_winds-cosima_clone_jra55_with_era5_winds-2d2046c9/ocean -np 216  /scratch/e14/ic0706/access-om2/work/1deg_jra55_iaf_era5_winds-cosima_clone_jra55_with_era5_winds-2d2046c9/ocean/fms_ACCESS-OM_730f0bf_libaccessom2_d750b4b.x : -wdir /scratch/e14/ic0706/access-om2/work/1deg_jra55_iaf_era5_winds-cosima_clone_jra55_with_era5_winds-2d2046c9/ice -np 24  /scratch/e14/ic0706/access-om2/work/1deg_jra55_iaf_era5_winds-cosima_clone_jra55_with_era5_winds-2d2046c9/ice/cice_auscom_360x300_24p_edcfa6f_libaccessom2_d750b4b.exe
+/home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/access-om2.err /scratch/e14/ic0706/access-om2/archive/1deg_jra55_iaf_era5_winds-cosima_clone_jra55_with_era5_winds-2d2046c9/error_logs/access-om2.156879222.gadi-pbs.err
+/home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/access-om2.out /scratch/e14/ic0706/access-om2/archive/1deg_jra55_iaf_era5_winds-cosima_clone_jra55_with_era5_winds-2d2046c9/error_logs/access-om2.156879222.gadi-pbs.out
+/home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/env.yaml /scratch/e14/ic0706/access-om2/archive/1deg_jra55_iaf_era5_winds-cosima_clone_jra55_with_era5_winds-2d2046c9/error_logs/env.156879222.gadi-pbs.yaml
+/home/561/ic0706/access-om2/1deg_jra55_iaf_era5_winds/resub.sh
+
+======================================================================================
+                  Resource Usage on 2025-12-17 15:21:18:
+   Job Id:             156879222.gadi-pbs
+   Project:            e14
+   Exit Status:        1
+   Service Units:      10.40
+   NCPUs Requested:    288                    NCPUs Used: 288             
+                                           CPU Time Used: 00:43:37        
+   Memory Requested:   1000.0GB              Memory Used: 206.32GB        
+   Walltime requested: 03:00:00            Walltime Used: 00:01:05        
+   JobFS requested:    600.0MB                JobFS used: 0B              
+======================================================================================
