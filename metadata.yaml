@@ -1,6 +1,6 @@
 contact: Add your name here
 email: Add your email address here
-created: Add the date you started the experiment here (YYYY-MM-DD)
+created: '2025-12-17'
 description: |-
   1 degree ACCESS-OM2 global model configuration under interannual forcing.
   The configuration is based on that described in Kiss et al. (2020),
@@ -24,8 +24,12 @@ notes: |-
   https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ
 license: CC-BY-4.0
 keywords:
-  - one
-  - cosima
-  - access-om2-1
-  - jra55-do-v1.4.0
-  - iaf
+- one
+- cosima
+- access-om2-1
+- jra55-do-v1.4.0
+- iaf
+experiment_uuid: 2d2046c9-cc89-451a-be2e-dfcd57dd2e99
+name: 1deg_jra55_iaf_era5_winds-cosima_clone_jra55_with_era5_winds-2d2046c9
+model: ACCESS-OM2
+url: git@github.com-user:Isabela-conde/1deg_jra55_iaf_era5_winds.git
