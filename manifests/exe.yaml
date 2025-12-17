@@ -1,11 +1,11 @@
 format: yamanifest
 version: 1.0
 ---
-work/atmosphere/yatm_d750b4b.exe:
-  fullpath: /g/data/ik11/inputs/access-om2/bin/yatm_d750b4b.exe
+work/atmosphere/yatm_70e2c46.exe:
+  fullpath: /g/data/ik11/inputs/access-om2/bin/yatm_70e2c46.exe
   hashes:
-    binhash: 52a975e3d202c0047a9ec9be1346c23c
-    md5: fcc373fb59917cada96c2776201b362d
+    binhash: 363c6bd6a6368548afe5e920f2ee43f3
+    md5: 0bf97ac6aeb0e1efccc54aed252d6e5d
 work/ice/cice_auscom_360x300_24p_edcfa6f_libaccessom2_d750b4b.exe:
   fullpath: /g/data/ik11/inputs/access-om2/bin/cice_auscom_360x300_24p_edcfa6f_libaccessom2_d750b4b.exe
   hashes:
